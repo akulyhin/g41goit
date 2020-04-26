@@ -26,7 +26,7 @@
       <div class="container">
         <!-- MAIN MENU -->
         <nav class="main-menu">
-          <ul>
+          <ul class="navbar-nav">
             <li><a href="#">Lifestyle</a></li>
             <li><a href="#">Photodiary</a></li>
             <li><a href="#">Music</a></li>
@@ -42,11 +42,10 @@
     <div class="wrapper-page">
       <!-- SECTION: Site content with 4 photo block
       ============================================ -->
-      <div class="row site-content">
-        <!-- First-BLock LyfeStyle -->
-        <div class="first-block">
+      <div class="container">
+        <div class="row">
           <!-- Block with Music Festival -->
-          <div class="column-wrap">
+          <div class="col-md-6">
             <div class="image-box">
               <img src="./img/clip.png" alt="Just a music festival" />
             </div>
@@ -79,7 +78,7 @@
           <!-- /Block with Music Festival -->
 
           <!-- Block with coffee -->
-          <div class="column-wrap">
+          <div class="col-md-6">
             <div class="image-box">
               <img src="./img/copia.png" alt="Life better with coffee" />
             </div>
@@ -110,13 +109,11 @@
             </div>
           </div>
           <!-- /Block with coffee -->
-        </div>
-        <!-- /First-BLock -->
+          <!-- /First-BLock -->
 
-        <!-- Second Block Photodiary -->
-        <div class="second-block">
+          <!-- Second Block Photodiary -->
           <!-- Block with American dream -->
-          <div class="column-wrap">
+          <div class="col-md-6">
             <div class="image-box">
               <img src="./img/american-dreams.png" alt="American dream" />
             </div>
@@ -149,7 +146,7 @@
           <!-- /Block with American Dream -->
 
           <!-- Block with Alps -->
-          <div class="column-wrap">
+          <div class="col-md-6">
             <div class="image-box">
               <img src="./img/alps.png" alt="A day exploring the Alps" />
             </div>
@@ -180,12 +177,21 @@
             </div>
           </div>
           <!-- /Block with Alps -->
-        </div>
-        <!-- /Second Block Photodiary -->
+          <!-- /Second Block Photodiary -->
 
-        <!-- Button Load more -->
-        <button class="load-more">Load more</button>
-        <!-- /Button Load more -->
+          <!-- Button Load more -->
+          <div class="col after-posts text-center">
+            <button class="btn btn-secondary load-more">
+              Load more
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+          <!-- /Button Load more -->
+        </div>
       </div>
       <!-- /SECTION: Site content with 4 photo block
       ============================================ -->
