@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +16,12 @@
     <meta name="robots" content="index, nofollow" />
     <!-- /Seo Tags -->
     <!--CSS -->
-
+<link rel="stylesheet" href="./css/style.css">
     <!--/CSS -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
   </head>
   <body>
     <!-- Header
@@ -39,13 +43,14 @@
     <!-- /Header
 ================================================== -->
 
-    <div class="wrapper-page">
+    <div class="wrapper">
       <!-- SECTION: Site content with 4 photo block
       ============================================ -->
+      <section>
       <div class="container">
-        <div class="row">
+        <div class="row first-row">
           <!-- Block with Music Festival -->
-          <div class="col-md-6">
+          <div class="col-md-6 left">
             <div class="image-box">
               <img src="./img/clip.png" alt="Just a music festival" />
             </div>
@@ -78,7 +83,7 @@
           <!-- /Block with Music Festival -->
 
           <!-- Block with coffee -->
-          <div class="col-md-6">
+          <div class="col-md-6 right">
             <div class="image-box">
               <img src="./img/copia.png" alt="Life better with coffee" />
             </div>
@@ -108,12 +113,14 @@
               </p>
             </div>
           </div>
+        </div>
           <!-- /Block with coffee -->
           <!-- /First-BLock -->
 
           <!-- Second Block Photodiary -->
           <!-- Block with American dream -->
-          <div class="col-md-6">
+          <div class="row second-row">
+          <div class="col-md-6 left">
             <div class="image-box">
               <img src="./img/american-dreams.png" alt="American dream" />
             </div>
@@ -146,7 +153,7 @@
           <!-- /Block with American Dream -->
 
           <!-- Block with Alps -->
-          <div class="col-md-6">
+          <div class="col-md-6 right">
             <div class="image-box">
               <img src="./img/alps.png" alt="A day exploring the Alps" />
             </div>
@@ -178,24 +185,18 @@
           </div>
           <!-- /Block with Alps -->
           <!-- /Second Block Photodiary -->
-
+        </div>
           <!-- Button Load more -->
-          <div class="col after-posts text-center">
-            <button class="btn btn-secondary load-more">
+          <div class="col">
+            <button class="load-more">
               Load more
-              <span
-                class="spinner-border spinner-border-sm"
-                role="status"
-                aria-hidden="true"
-              ></span>
             </button>
           </div>
-          <!-- /Button Load more -->
-        </div>
-      </div>
+          <!-- /Button Load more -->   
+        </section>
       <!-- /SECTION: Site content with 4 photo block
       ============================================ -->
     </div>
-    <!-- /Wrapper page -->
+    <!-- /Wrapper -->
   </body>
 </html>
