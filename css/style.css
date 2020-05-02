@@ -43,7 +43,7 @@ margin: 0 auto;
     margin-bottom: 100px;
 }
 .posts-grid :last-child.row {
-margin-bottom: 25px;
+margin-bottom: 35px;
 }
 
 .col {
@@ -87,4 +87,5 @@ line-height: 24px;
     background: #fff;
     font-size: 20px;
     color: #626262;
+    cursor: pointer;
 }
