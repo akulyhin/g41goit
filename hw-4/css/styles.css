@@ -137,15 +137,19 @@ width: 165px;
     background: #e7eefb;
     position: relative;
     float: left;
-    cursor: pointer;
 }
 
-.product:nth-last-of-type(n+2) {
+.product:not(:nth-last-child(-n+4)) {
     margin-bottom: 30px;
 }
 
 .product:not(:nth-of-type(4n)) {
     margin-right: 30px;
+}
+
+.product a {
+    display: inline-block;
+    height: 100%;
 }
 
 .product-img {
