@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.site-navigation {
+    width: 1110px;
+    padding: 35px 0;
+    margin: 0 auto;
+    line-height: 70px;
+    margin-bottom: 90px;
+}
+
+.site-logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #555252;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+}
+
+.site-logo span {
+    color: #1abc9c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+  
+
+/* MAIN MENU */
+.main-menu {
+    width: 1025px;
+    float: right;
+    text-align: right;
+}
+
+.main-menu li {
+    display: inline-block;
+    /* margin-right: 30px; */
+}
+
+.main-menu li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+    display: block;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #1abc9c;
+    outline: none;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 20px;
+    background: #1abc9c;
+    transition: width .5s ease-in-out;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after  {
+    width: 100%;
+}
+
+/* Featured products */
+.featured-products-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.featured-products-title h2 {
+    font-size: 48px;
+    color: #515151;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    position: relative;
+    line-height: 32px;
+    display: inline-block;
+}
+
+.featured-products-title h2::after {
+content: '';
+position: absolute;
+bottom: -30px;
+left: 0;
+right: 0;
+margin: auto;
+height: 7px;
+background: #1abc9c;
+width: 165px;
+}
