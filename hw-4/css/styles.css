@@ -22,9 +22,6 @@ img {
     margin: 0 auto;
 }
 
-section {
-    display: inline-block;
-}
 /* Header & Main Menu & Logo */
 
 .page-header {
@@ -207,15 +204,15 @@ width: 165px;
 }
 
 .product:hover .product-text,
-.product:focus .product-text {
+.product a:focus .product-text {
     background: #1abc9c;
 }
 
 .product:hover .product-price,
-.product:focus .product-price {
+.product a:focus .product-price {
     background: #7fd9c7;
 }
-
+    
 /* /Featured products */
 
 /* Latest News */
@@ -317,4 +314,11 @@ width: 135px;
     text-decoration: none;
     padding: 20px 45px;
     display: inline-block;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
