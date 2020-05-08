@@ -319,7 +319,7 @@ width: 165px;
 
 .product:hover .product-overflow,
 .product a:focus .product-overflow {
-    opacity: .55;
+    opacity: .65;
 }
 .product:hover .product-buttons,
 .product a:focus .product-buttons {
