@@ -280,6 +280,7 @@ width: 165px;
     height: 40px;
     line-height: 40px;
     color: #fff;
+    z-index: 5;
 }
 
 .product-title {
@@ -315,6 +316,35 @@ width: 165px;
 .product a:focus .product-price {
     background: #7fd9c7;
 }
+
+.product:hover .product-overflow,
+.product a:focus .product-overflow {
+    opacity: .55;
+}
+
+.product-overflow {
+    background: #fff;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: all.4s ease;
+}
+
+.product-overflow-black {
+    background: #000;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: 235px;
+    height: 260px;
+}
+
+
 
 /* /Product Grid */
 
