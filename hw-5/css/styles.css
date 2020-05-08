@@ -321,6 +321,10 @@ width: 165px;
 .product a:focus .product-overflow {
     opacity: .55;
 }
+.product:hover .product-buttons,
+.product a:focus .product-buttons {
+    display: block;
+}
 
 .product-overflow {
     background: #fff;
@@ -345,8 +349,117 @@ width: 165px;
 }
 
 
+.product-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 172px;
+    z-index: 2;
+    display: none;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    transition: all.4s ease;
+    border: 1px solid #fff;
+}
+
+.btn-wishlist {
+    background-image: url('../img/wishlist.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-compare {
+    background-image: url('../img/compare.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-clock {
+    background-image: url('../img/clock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn:hover {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.btn-cart {
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 20px 15px 20px 40px;
+    position: relative;
+    transition: all .4s ease;
+    border: 1px solid #fff;
+}
+
+.btn-cart:before {
+    content: '';
+    background-image: url('../img/cart.png');
+    background-repeat: no-repeat;
+    background-size: 29px 29px; 
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 29px;
+    height: 29px;
+}
+
+.btn-cart:hover {
+    background-color: #323232;
+}
+
+.btn {
+    margin-right: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.btn:nth-last-of-type(2) {
+    margin-right: 0;
+}
+.btn {
+    font-size: 0;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+}
 
 /* /Product Grid */
 
 /* /SECTION: New-collection
+================================================= */
+
+/* Footer
+================================================= */
+.page-footer {
+    background: #323232;
+    height: 90px;
+    line-height: 90px;
+}
+
+a {
+    color: #46bfa9;
+}
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section {
+    text-align: center;
+    color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* /Footer
 ================================================= */
