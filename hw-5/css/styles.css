@@ -392,6 +392,7 @@ width: 165px;
 
 .btn-cart {
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     padding: 20px 15px 20px 40px;
