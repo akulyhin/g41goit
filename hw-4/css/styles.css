@@ -18,7 +18,7 @@ img {
 }
 
 .container {
-    width: 1170px;
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -105,6 +105,9 @@ img {
     opacity: 1;
 }
 /* /Header & Main Menu & Logo */
+
+
+
 
 /* Featured products */
 
@@ -314,11 +317,12 @@ width: 135px;
     text-decoration: none;
     padding: 20px 45px;
     display: inline-block;
+    border-radius: 3px;
 }
-
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+  
