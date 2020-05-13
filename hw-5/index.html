@@ -21,10 +21,11 @@
 <!-- /Normalize CSS -->
 </head>
 <body>
+    <div class="light-theme">
     <!-- Header
     ============================================== -->
-    <header class="page-header container">  
-            <div class="site-navigation">
+    <header class="page-header">
+            <div class="site-navigation container">
                 <nav>
                     <!-- Logo -->
                     <a href="#" class="site-logo"><span>M</span>art</a>
@@ -40,6 +41,9 @@
                     </ul>
                     <!-- /Main Menu -->
                 </nav>
+                <div class="change-theme-block">
+                    <button class="theme-button">Изменить тему</button>
+                </div>
             </div>          
     </header>
     <!-- /Header
@@ -236,5 +240,10 @@
 <!-- /Footer
 ================================================== -->
 
+</div>
+<!-- SCRIPTS HERE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+<!-- /SCRIPTS HERE -->
 </body>
 </html>

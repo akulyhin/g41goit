@@ -10,6 +10,9 @@ html {
     margin: 0;
 }
 
+:root {
+    --main-color: #1abc9c;
+}
 
 img {
     display: block;
@@ -28,6 +31,11 @@ img {
     line-height: 90px;
     height: 90px;
     background: #fff;
+    transition: all.6s ease;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 2px 2px 10px rgb(0,0,0);
 }
 
 .site-navigation {
@@ -43,6 +51,7 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     float: left;
+    transition: all.6s ease;
 }
 
 .site-logo span {
@@ -78,6 +87,7 @@ img {
     font-size: 14px;
     position: relative;
     display: block;
+    transition: all.6s ease;
 }
 
 .menu-link:hover,
@@ -104,6 +114,31 @@ img {
     width: 100%;
     opacity: 1;
 }
+
+/* Change Theme */
+.change-theme-block {
+    position: absolute;
+    right: 15px;
+}
+
+.theme-button {
+    background: #fff;
+    color: var(--main-color);
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    padding: 10px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    transition: all.6s ease;
+}
+
+.theme-button:hover {
+background: var(--main-color);
+color: #fff;
+}
+
+/* /Change Theme */
+
 /* /Header & Main Menu & Logo */
 
 
@@ -463,4 +498,53 @@ a {
 }
 
 /* /Footer
+================================================= */
+
+
+/* DARK THEME
+================================================= */
+.dark-theme .page-header {
+    background: #555252;
+    transition: all.6s ease;
+}
+
+.dark-theme .site-logo {
+    color: #fff;
+    transition: all.6s ease;
+}
+
+.light-theme {
+   background:#fff;
+    transition: all.6s ease;
+}
+
+.dark-theme {
+    background: #555252;
+    transition: all.6s ease;
+}
+
+.dark-theme .menu-link {
+    color: #fff;
+    transition: all.6s ease;
+}
+
+.dark-theme .theme-button {
+    background: #555252;
+    transition: all.6s ease;
+}
+
+.dark-theme .theme-button:hover {
+background: var(--main-color);
+color: #fff;
+}
+
+.dark-theme .new-collection {
+    background-color: #555252;
+}
+
+.dark-theme .new-collection-title h2 {
+    color: #fff;
+}
+
+/* /DARK THEME
 ================================================= */
