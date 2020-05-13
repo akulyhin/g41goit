@@ -246,6 +246,7 @@ color: #fff;
 .new-collection {
     padding: 100px 0;
     background-color: #e9f0fd;
+    transition: all.6s ease;
 }
 
 .new-collection-title {
@@ -261,6 +262,7 @@ color: #fff;
     font-weight: 800;
     position: relative;
     display: inline-block;
+    transition: all.6s ease;
 }
 
 .new-collection-title h2::after {
@@ -541,10 +543,12 @@ color: #fff;
 
 .dark-theme .new-collection {
     background-color: #555252;
+    transition: all.6s ease;
 }
 
 .dark-theme .new-collection-title h2 {
     color: #fff;
+    transition: all.6s ease;
 }
 
 /* /DARK THEME
