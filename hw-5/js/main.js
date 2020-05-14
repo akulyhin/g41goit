@@ -19,3 +19,15 @@ $(window).scroll(function() {
     }
     });
     //  Go 2 top END
+
+
+// Open|Close mobile menu
+
+$(document).ready(function() {
+$('.mob-lines').click(function(){
+     $('.overlay-menu').addClass('open-menu');
+     });
+     $('.close-menu').click(function(){
+          $('.overlay-menu').removeClass('open-menu');
+          });
+});
