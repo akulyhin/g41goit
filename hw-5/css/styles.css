@@ -710,7 +710,7 @@ opacity: 1;
             transform: translateX(-100%);
             transition: transform .6s ease-in-out, opacity .9s ease;
             opacity: 0;
-            animation: bg-change 25s;
+            animation: bg-change 25s infinite;
         }
 
         @keyframes bg-change {
