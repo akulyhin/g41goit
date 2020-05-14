@@ -717,11 +717,14 @@ opacity: 1;
             0% {
                 background: #000;
             }
-            50% {
+            33% {
                 background: rgb(58, 51, 68);
             }
-            100% {
+            66% {
                 background: #444;
+            }
+            100% {
+                background: #000;
             }
         }
 
