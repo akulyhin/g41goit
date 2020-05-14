@@ -66,7 +66,7 @@ img {
 
 /* MAIN MENU */
 .main-menu {
-    width: 1025px;
+    /* width: 1025px; */
     float: right;
     text-align: right;
 }
@@ -119,8 +119,8 @@ img {
 
 /* Change Theme */
 .change-theme-block {
-    position: absolute;
-    right: 15px;
+    float: right;
+    padding-left: 40px;
 }
 
 .theme-button {
@@ -588,3 +588,70 @@ opacity: 1;
     height: 100%;
     width: 100%;
 }
+
+
+/* MEDIA SCREEN 1051px */
+@media (max-width: 1110px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .slider-title h3 {
+        font-size: 2.8rem;
+    }
+
+
+/* Mobile Menu */
+    .position-right {
+        position: relative;
+            float: right;
+            z-index: 2;
+            height: 100%;
+            text-align: right;
+            padding: 0 15px;
+        }
+        
+        .mob-lines {
+            font-size: 20px;
+            width: 21px;
+            line-height: 3px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .dot {
+        background-color: #444;
+        display: block;
+        float: left;
+        width: 5px;
+        height: 5px;
+        margin: 0 2px 2px 0;
+        border-radius: 50%;
+        visibility: visible;
+        background-color: var(--main-color);
+        -webkit-transition: opacity .3s cubic-bezier(.07,.52,0,.93);
+        -moz-transition: opacity .3s cubic-bezier(.07,.52,0,.93);
+        transition: opacity .3s cubic-bezier(.07,.52,0,.93);
+        }
+
+        .dot:nth-child(1) {
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+        }
+        .dot:nth-child(2) {
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+        }
+        .mob-lines:hover .dot:nth-child(1),
+        .mob-lines:hover .dot:nth-child(2),
+        .mob-lines:hover .dot:nth-child(4) {
+            opacity: 0;
+        }
+        /* /Mobile Menu */
+}
+/* /MEDIA SCREEN 1051px */
+
+/* MEDIA SCREEN  */

@@ -1,11 +1,12 @@
+//  Change theme
 $(document).ready(function(){
 $('.theme-button').click(function() {
     $('.light-theme').toggleClass('dark-theme');
     });
 });
+//  Change theme END
 
-
-
+//  Go 2 top 
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     
@@ -17,3 +18,4 @@ $(window).scroll(function() {
     $('.back-2-top').removeClass('chown');
     }
     });
+    //  Go 2 top END
