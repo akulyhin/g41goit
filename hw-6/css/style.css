@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    color: #333;
 }
 
 h2 {
@@ -33,6 +34,7 @@ a {
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -41,7 +43,7 @@ a {
 
 .site_header {
 padding-top: 30px;
-margin: 0 auto;
+margin-bottom: 130px;
 }
 
 .navigation {
@@ -58,6 +60,7 @@ margin: 0 auto;
 }
 
 
+/* main-Menu */
 .main-menu {
     display: flex;
     justify-content: flex-end;
@@ -116,5 +119,195 @@ margin: 0 auto;
 .menu-link:focus:after {
 width: 50%;
 opacity: 1;
-
 }
+/* /main-Menu */
+
+/* /Header
+===================================================== */
+
+/* SECTION: Amazing Services
+===================================================== */
+.amazing-service {
+    margin-bottom: 100px;
+}
+
+/* Title */
+.title-block {
+text-align: center;
+}
+
+.title-block span {
+font-family: 'Kaushan Script', sans-serif;
+font-size: 24px;
+color: #333;
+margin-bottom: 15px;
+}
+
+.title-block h2 {
+    margin-top: 15px;
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.title-block h2:after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--main-hover-color);
+}
+/* /Title */
+
+
+/* Icons List */
+
+.icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons-item {
+    list-style: none;
+    display: flex;
+    flex-basis: 345px;
+}
+.content {
+}
+
+.icons-item:before {
+    content: '';
+    width: 90px;
+    background-repeat: no-repeat;
+    display: block; 
+}
+.icon-alarm:before {
+    background-image: url('../img/icons-list/alarm.png');
+}
+
+.icon-line:before {
+    background-image: url('../img/icons-list/line-graph.png');
+}
+
+.icon-computer:before {
+    background-image: url('../img/icons-list/computer.png');
+}
+
+.icon-book:before {
+    background-image: url('../img/icons-list/book.png');
+}
+
+.icon-home:before {
+    background-image: url('../img/icons-list/home.png');
+}
+
+.icon-image:before {
+    background-image: url('../img/icons-list/image.png');
+}
+
+
+
+.icons-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 105px;
+}
+
+.icons-item h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.icons-item p {
+    line-height: 24px;
+    color: #999;
+}
+/* /Icons List */
+
+/* /SECTION: Amazing Services
+===================================================== */
+
+/* SECTION: Our Team
+===================================================== */
+
+.our-team {
+    margin-bottom: 85px;
+}
+
+.our-team_description {
+    max-width: 980px;
+    margin: 0 auto 95px;
+}
+
+.our-team_description p {
+    text-align: center;
+    line-height: 24px;
+    color: #999;
+}
+
+.our-team_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-team_item {
+    display: flex;
+    flex-basis: 380px;
+    list-style: none;
+    position: relative;
+    transition: all.2s linear;
+}
+
+.our-team_item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.our-team_item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(252,227,138,1) 0%, rgba(243,129,129,0.896796218487395) 100%);
+    opacity: 0;
+    transition: all.2s linear;
+}
+
+.our-team_item img {
+    transition: all.2s linear;
+}
+
+.our-team_item:hover img {
+    transform: translate(-10px, -10px);
+}
+
+.our-team_item:hover::after {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+/* social icons */
+.social-list {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-item {
+    list-style: none;
+}
+
+
+
+/* /SECTION: Our Team
+===================================================== */
