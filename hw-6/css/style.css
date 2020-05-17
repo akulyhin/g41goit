@@ -386,8 +386,53 @@ background-color: var(--main-color);
     align-items: center;
 }
 
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
 .subscribe-box {
     display: flex;
+}
+
+form {
+    font-size: 0;
+}
+
+input[type="email"] {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+input[type="email"]::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+button[type="submit"] {
+background: var(--main-color);
+border: 0;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+padding: 12px 33px;
+cursor: pointer;
+transition: all.2s linear;
+}
+
+button[type="submit"]:hover {
+    background: var(--main-hover-color);
 }
 
 /* /Footer
