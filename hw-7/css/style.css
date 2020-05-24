@@ -1,0 +1,304 @@
+/* FONTS 
+========================================== */
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat/montserrat-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat/montserrat-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat/montserrat-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat/montserrat-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* /Montserrat */
+
+/* Roboto-slab */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto_slab/roboto-slab-regular.woff2') format('woff2'),
+         url('../fonts/roboto_slab/roboto-slab-regular.woff') format('woff');
+  }
+/* /Roboto-slab */
+
+/* /FONTS 
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+:root {
+    --main-color: #222;
+    --main-hover-color: #fed751;
+}
+
+/* Header
+=========================================== */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 125px;
+    flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo {
+    color: var(--main-hover-color);
+    font-size: 26px;
+    padding: 0 7px;
+}
+/* /LOGO */
+
+/* Main-menu */
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 700;
+    transition: all.2s linear;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--main-hover-color);
+    outline: 0;
+}
+/* /Main-menu */
+
+/* /Header
+=========================================== */
+
+/* SECTION: Services
+=========================================== */
+
+.services-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.services-title span {
+    font-size: 16px;
+}
+
+/* Icon Block */
+
+.icon-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.icon-item {
+    list-style: none;
+    flex-basis: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ICONS */
+.icon-item::before {
+    content: '';
+    width: 72px;
+    height: 72px;
+    border: 3px solid var(--main-hover-color);
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-e_commerce::before {
+    background-image: url('../img/icons/Icon-e_commerce.png');
+}
+
+.icon-responsive::before {
+    background-image: url('../img/icons/icon-responsive.png');
+}
+
+.icon-web_security::before {
+    background-image: url('..//img/icons/icon-web_security.png');
+}
+/* /ICONS */
+
+/* Title */
+.icon-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.icon-item p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* /Title */
+  
+/* /Icon Block */
+
+/* /SECTION: Services
+=========================================== */
+
+/* SECTION: Contact us
+=========================================== */
+.contact-us {
+    width: 100%;
+    background-color: var(--main-color);
+    background-image: url('../img/map-mage.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+}
+
+/* Title */
+.contact-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-title span {
+    font-size: 16px;
+}
+/* /Title */
+
+/* Form */
+.contact-form {
+    width: 100%;
+
+}
+
+.form-left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 455px;
+    max-width: 100%;
+}
+
+.form-right {
+    float: right;
+    margin-left: 15px;
+    width: 455px;
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+}
+
+.contact-form input {
+    margin-bottom: 30px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    text-transform: uppercase;
+    color: #bbb;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 50px;
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+    /* padding: 15px 0 15px 20px; */
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 210px;
+    line-height: 50px;
+}
+
+
+/* /Form */
+
+/* /SECTION: Contact us
+=========================================== */
