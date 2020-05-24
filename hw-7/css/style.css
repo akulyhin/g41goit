@@ -228,29 +228,24 @@ a {
 /* Form */
 .contact-form {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .form-left {
-    float: left;
     display: flex;
     flex-direction: column;
     margin-right: 15px;
-    width: 455px;
+    width: 440px;
     max-width: 100%;
 }
 
 .form-right {
-    float: right;
     margin-left: 15px;
-    width: 455px;
+    width: 425px;
     max-width: 100%;
-}
-
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .contact-form input,
@@ -271,14 +266,13 @@ a {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding-left: 15px;
 }
 
 input[type="text"],
 input[type="email"] {
     height: 50px;
-    padding-left: 15px;
     line-height: 50px;
+    padding-left: 15px;
 }
 
 input[type="text"],
@@ -288,17 +282,35 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--main-color);
-    /* padding: 15px 0 15px 20px; */
 }
 
 .contact-form textarea {
     resize: none;
-    height: 210px;
-    line-height: 50px;
+    height: 180px;
+    padding: 15px;
 }
 
+.contact-form_submit {
+    margin-bottom: 115px;
+}
 
+.contact-form_submit button[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    background: var(--main-hover-color);
+    border: 1px solid var(--main-hover-color);
+    cursor: pointer;
+    padding: 25px 45px;
+    transition: all.2s linear;
+}
+
+.contact-form_submit button[type="submit"]:hover {
+    background: #d4b446;
+}
 /* /Form */
-
 /* /SECTION: Contact us
 =========================================== */
