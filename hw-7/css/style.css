@@ -71,6 +71,7 @@ a {
 
 /* LOGO */
 .logo {
+    font-family: 'Great Vibes', cursive;
     color: var(--main-hover-color);
     font-size: 26px;
     padding: 0 7px;
@@ -128,6 +129,7 @@ a {
 }
 
 .services-title span {
+    font-family: 'Caudex', serif;
     font-size: 16px;
 }
 
@@ -222,6 +224,7 @@ a {
 
 .contact-title span {
     font-size: 16px;
+    font-family: 'Caudex', serif;
 }
 /* /Title */
 
