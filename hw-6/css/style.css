@@ -134,6 +134,7 @@ margin-bottom: 15px;
     margin-top: 15px;
     position: relative;
     margin-bottom: 110px;
+    text-transform: uppercase;
 }
 
 .title-block h2:after {
