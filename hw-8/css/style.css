@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Settings */
+:root {
+    --main-color: #ff4e50;
+}
+/* /Settings */
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.auth {
+    display: flex;
+}
+
+.auth-item {
+    list-style: none;
+}
+
+.auth-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+}
+
+.auth-link:hover,
+.auth-link:focus {
+    color: var(--main-color);
+    outline: none;
+}
+
+.sign-up {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+.sign-up:hover,
+.sign-up:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+  
+/* /Header */
+
+/* SECTION: Hero
+=============================== */
+.hero {
+    width: 100%;
+    background-image: url('../img/holiday-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(26, 25, 21, .23);
+}
+  
+.hero-text-block {
+    padding-top: 227px;
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 235px;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 42px;
+}
+
+.hero-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 20px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+}
+  
+
+
+/* /SECTION: Hero
+=============================== */
