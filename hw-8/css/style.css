@@ -138,8 +138,74 @@ a {
     border: 1px solid var(--main-color);
     border-radius: 25px;
 }
-  
-
 
 /* /SECTION: Hero
+=============================== */
+
+/* SECTION: Best Partners
+=============================== */
+.best-partners {
+    padding-top: 70px;
+}
+
+.partner-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.partner-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Partners List */
+.partners-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.partners-item {
+    list-style: none;
+    flex-basis: 220px;
+    text-align: center;
+}
+
+.partners-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.partners-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px
+}
+
+.parters-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partners-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.2;
+}
+
+  
+
+/* /Partners List */
+
+
+
+/* /SECTION: Best Partners
 =============================== */
