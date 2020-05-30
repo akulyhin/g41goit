@@ -54,28 +54,25 @@ a {
 }
 
 .auth-link {
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 14px;
+    transition: all.2s linear;
 }
 
 .auth-link:hover,
 .auth-link:focus {
-    color: var(--main-color);
-    outline: none;
+    border-color: #fff;
 }
 
 .sign-up {
     margin-left: 15px;
     padding: 10px 15px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-}
-.sign-up:hover,
-.sign-up:focus {
-    border-color: var(--main-color);
-    outline: none;
+
 }
   
 /* /Header */
@@ -139,6 +136,7 @@ a {
     border: 1px solid var(--main-color);
     border-radius: 25px;
     transition: all .4s ease;
+    cursor: pointer;
 }
 
 .hero-button:hover {
@@ -152,7 +150,7 @@ a {
 /* SECTION: Best Partners
 =============================== */
 .best-partners {
-    padding-top: 70px;
+    padding: 70px 0;
 }
 
 .partner-title {
@@ -252,7 +250,6 @@ a {
 
 /* Button See other partners */
 .other-partners {
-    margin-bottom: 70px;
     text-align: center;
 }
 
@@ -284,6 +281,10 @@ a {
 ================================ */
 
 @media (max-width: 768px) {
+    .best-partners {
+        padding: 40px 0;
+    }
+    
     .container {
         max-width: 748px;
     }
@@ -299,9 +300,6 @@ a {
 
     .partners-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 60px;
-    }
-    .other-partners {
-        margin-bottom: 40px;
     }
 }
 
