@@ -232,9 +232,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 }
-  
-  
-  
+
 .parters-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -282,6 +280,9 @@ a {
 
 
 
+/* Media MAX 768px
+================================ */
+
 @media (max-width: 768px) {
     .container {
         max-width: 748px;
@@ -303,6 +304,13 @@ a {
         margin-bottom: 40px;
     }
 }
+
+/* Media MAX 768px
+================================ */
+
+
+/* Media MAX 511px
+================================= */
 
 @media (max-width: 511px) {
     .site-header {
@@ -339,3 +347,6 @@ a {
         padding: 15px 70px;
     }
 }
+
+/* /Media MAX 511px
+================================= */
