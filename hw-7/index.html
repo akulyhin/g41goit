@@ -3,103 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache"/>
-    <title>Document</title>
+    <title>Homework - 07 Artem Kulyhin | GoIT</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/auth-style.css">
-    <!-- /Css -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- /CSS -->
 
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- /Normalize CSS -->
+
+    <!-- Google Fonts for Logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- /Google Fonts for Logo -->
+
+    <!-- Google fonts for span under heads -->
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital@1&display=swap" rel="stylesheet">
+    <!-- /Google fonts for span under heads -->
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="site-header container">
 
-
-<!--  блок с формой авторизации  -->
-<div class="auth-container">
-	<div class="mlogin">
-		<div class="container-form">
-<div class="form-text">
-			<h3>АВТОРИЗАЦІЯ</h3>
-<p>Для авторизації в системі вкажіть ваш номер телефону і введіть код підтвердження</p>
-</div>
-		<div class="form">
-			<form name="f" action="" method="post">
-				<p class="svphone">Мобільний телефон: <input type="tel" name="phone" id="phone" autocomplete="off" placeholder="Введіть телефон" required/></p>
-				<p class="svsmspass" style="display:none;">Введіть отриманий код:  <input type="tel" autocomplete="off" placeholder="Отриманий смс-пароль" name="sms-pass" id="smspass" required/></p>
-				
-				<center><button type="button" id="sendPhoneButton">Отримати пароль</button></center>
-				<center><button type="button" id="sendPassButton" style="display:none;">Підтвердити</button></center>
-		<div class="container-forma info-send" style="display:none; text-align: center;"></div>
-<div class="restore" style="display:none;"><p class="restorepass" style="display:none;">Якщо Ви втратили або не отримали пароль, отримайте його повторно натиснувши кнопку нижче.</p><p class="resendpass" style="display:none;">Якщо у Вас виникли проблеми з авторизацією, зателефонуйте на гарячу лінію.</p>
-				<center><button type="button" id="sendRestorePass" style="display:none;">Нагадати пароль</button></center></div>
-			</form></div>
-		</div>
-<div class="zgoda"><div style="width: 10%; padding-left: 5px;margin-right: 5px;"><i class="fa fa-info-circle" aria-hidden="true"></i></div><div>Вводячи номер телефону, я даю згоду на отримання SMS з паролем.</div></div>
-
-		</div>
-	</div>
-	
-		
-	
-	<!--  блок уведомлений  -->
-	<!-- <div class="container-forma info-send" style="display:none;"> -->
-	
-		
-    <!--  блок со скрытым содержимым  -->
-    <div class="container-forma fadeInDown wow" id="svHiddenBlock" style="display:none;"></div>
-
-        <!-- Jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- /Jquery -->
+        <!-- LOGO -->
+        <div class="site-logo">
+                <a class="logo" href="#">Golden</a>
+        </div>
+        <!-- /LOGO -->
         
-        <!-- Скрипт авторизации -->
-        <script src="./authsms.js"></script>
-        <!-- /Скрипт авторизации -->
+        <!-- Main Menu -->
+        <nav class="site-navigation">
+            <ul class="main-menu">
+                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Services</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Main Menu -->
 
+    </header>
+    <!-- /Header -->
+
+    <main>
+        <!-- SECTION: Services
+        ================================================ -->
+        <section class="services">
+            <div class="container"> 
+            <!-- Title -->
+            <div class="services-title">
+                <h2>Services</h2>
+                <span>Proin iaculis purus consequat sem cure.</span>
+            </div>
+            <!-- /Title -->
+
+            <!-- Icon-Block -->
+            <ul class="icon-block">
+
+                <li class="icon-item icon-e_commerce">
+                    <h3>E-Commerce</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+
+                <li class="icon-item icon-responsive">
+                    <h3>Responsive Web</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+
+                <li class="icon-item icon-web_security">
+                    <h3>Web Security</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                        digni ssim. Donec porttitora entum suscipit 
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </li>
+
+            </ul>
+
+            <!-- /Icon-Block -->
+            </div>
+        </section>
+
+        <!-- /SECTION: Services
+        ================================================ -->
+
+        <!-- SECTION: Contact Us
+        ================================================ -->
+        <section class="contact-us">
+            <div class="container">
+
+                <!-- Title -->
+                <div class="contact-title">
+                    <h2>Contact Us</h2>
+                    <span>Proin iaculis purus consequat sem cure.</span>
+                </div>
+                <!-- Title -->
+
+                <!-- Form -->
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-left">
+                        <input type="text" name="your_name" placeholder="Your name *" required>
+                        <input type="email" name="your_email" placeholder="Your e-mail *" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="form-right">
+                    <textarea name="your_message" placeholder="Your message *" wrap="wrap" rows="10" required></textarea>
+                    </div>
+
+                    <div class="contact-form_submit">
+                    <button type="submit">Send Message</button>
+                    </div>
+                </form>
+
+                <!-- / Form -->
+            </div>
+        </section>
+
+        <!-- /SECTION: Contact Us
+        ================================================ -->
+
+    </main>
     
-	<script src="./js/jquery.mask.js"></script>
-	<script src="./js/jquery.mask.min.js"></script>
-    
-
-
-<script>
-$(document).ready(function(){
-$('.date').mask('00/00/0000');
-$('.time').mask('00:00:00');
-$('.date_time').mask('00/00/0000 00:00:00');
-$('.cep').mask('00000-000');
-$('#phone').mask('+38(000) 000-00-00');
-$('#smspass').mask('0000');
-$('.phone_us').mask('(000) 000-0000');
-$('.mixed').mask('AAA 000-S0S');
-$('.name').mask('S');
-$('.cpf').mask('000.000.000-00', {reverse: true});
-$('.cnpj').mask('00.000.000/0000-00', {reverse: true});
-$('.money').mask('000.000.000.000.000,00', {reverse: true});
-$('.money2').mask("#.##0,00", {reverse: true});
-$('.ip_address').mask('0ZZ.0ZZ.0ZZ.0ZZ', {
-translation: {
-'Z': {
-pattern: /[0-9]/, optional: true
-}
-}
-});
-$('.ip_address').mask('099.099.099.099');
-$('.percent').mask('##0,00%', {reverse: true});
-$('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
-$('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
-$('.fallback').mask("00r00r0000", {
-translation: {
-'r': {
-pattern: /[\/]/,
-fallback: '/'
-},
-placeholder: "__/__/____"
-}
-});
-$('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
-});
-</script>
 </body>
 </html>
