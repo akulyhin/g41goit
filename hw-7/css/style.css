@@ -275,14 +275,22 @@ a {
     font-weight: 700;
 }
 
+.contact-form input:valid,
+.contact-form textarea:valid {
+    outline: 2px solid green;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    outline: 2px solid red;
+}
+
 input[type="text"],
 input[type="email"] {
     height: 50px;
     line-height: 50px;
     padding-left: 15px;
 }
-
-
 
 .contact-form textarea {
     resize: none;
