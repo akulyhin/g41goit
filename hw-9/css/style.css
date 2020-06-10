@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Settings */
+:root {
+    --main-color: #ff4e50;
+}
+/* /Settings */
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.auth {
+    display: flex;
+}
+
+.auth-item {
+    list-style: none;
+}
+
+.auth-link {
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    transition: all.2s linear;
+}
+
+.auth-link:hover,
+.auth-link:focus {
+    border-color: #fff;
+}
+
+.sign-up {
+    margin-left: 15px;
+    padding: 10px 15px;
+
+}
+  
+/* /Header */
+
+/* SECTION: Hero
+=============================== */
+.hero {
+    width: 100%;
+    background-image: url('../img/holiday-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(26, 25, 21, .23);
+}
+  
+.hero-text-block {
+    padding-top: 227px;
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 235px;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 42px;
+}
+
+.hero-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 20px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    box-shadow: 2px 2px 9px rgba(0,0,0, .37);
+    background: #e24244;
+}
+
+/* /SECTION: Hero
+=============================== */
+
+/* SECTION: Best Partners
+=============================== */
+.best-partners {
+    padding: 70px 0;
+}
+
+.partner-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.partner-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Partners List */
+.partners-list {
+    margin-bottom: 40px;
+}
+
+.partners-item {
+    list-style: none;
+    text-align: center;
+}
+
+.partners-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.partners-photo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 36px;
+    height: 36px;
+    z-index: 5;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.bradley-hunter::after {
+    background-color: #ff4e50;
+    background-image: url('../img/partners-list/icon/icon-tv.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heather-walker::after {
+    background-color: #1cd7ad;
+    background-image: url('../img/partners-list/icon/icon-coffee.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lucas-marsha::after {
+    background-color: #ffa507;
+    background-image: url('../img/partners-list/icon/icon-scientist.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bradley-hunter2::after {
+    background-color: #4e73db;
+    background-image: url('../img/partners-list/icon/icon-telegram.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.parters-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partners-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.2;
+}
+/* /Partners List */
+
+/* Button See other partners */
+.other-partners {
+    text-align: center;
+}
+
+.other-partners button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 15px 25px;
+    background: transparent;
+    border-radius: 25px;
+    transition: all.4s ease;
+    cursor: pointer;
+}
+
+.other-partners button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+/* /Button See other partners */
+
+/* /SECTION: Best Partners
+=============================== */
+
+
+
+/* Media MAX 768px
+================================ */
+
+@media (max-width: 768px) {
+    .best-partners {
+        padding: 40px 0;
+    }
+    
+    .container {
+        max-width: 748px;
+    }
+
+    .main-header {
+        margin: 0 45px;
+    }
+
+    .partners-item {
+        flex-basis: 236px;
+        margin-right: 20px;
+    }
+
+    .partners-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 60px;
+    }
+}
+
+/* Media MAX 768px
+================================ */
+
+
+/* Media MAX 511px
+================================= */
+
+@media (max-width: 511px) {
+    .site-header {
+        padding-top: 35px;
+    }
+
+    .main-header {
+        flex-direction: column-reverse;
+    }
+
+    .auth {
+        margin-bottom: 135px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .partners-item {
+        margin-right: 0;
+        flex-basis: 200px;
+    }
+    
+    .partners-item:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .other-partners button {
+        padding: 15px 70px;
+    }
+}
+
+/* /Media MAX 511px
+================================= */
