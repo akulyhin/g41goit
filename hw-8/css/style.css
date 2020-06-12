@@ -27,7 +27,7 @@ a {
     left: 50%;
     transform: translate(-50%);
     padding-top: 50px;
-    z-index: 2;
+    z-index: 99;
 }
 
 .main-header {
