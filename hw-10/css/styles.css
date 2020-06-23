@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #95e1d3;
+    --main-hover-color: #f38181;
+    --header-hover-color: #fce38a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;  
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-hover-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header
+===================================================== */
+
+.site-header {
+    background-image: url('../img/header-bg.jpg');
+    background-position: center;
+    background-size: cover;  
+}
+
+.site-header__top {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__logo-img {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* Menu */
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list-item {
+    list-style: none;
+}
+
+.menu__list-item:not(:last-child) {
+    margin-right: 58px;
+}
+
+.menu__list-item--button:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu__list-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: all.2s linear;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.menu__list-link::before {
+    content: '';
+    background-color: var(--header-hover-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    opacity: 0;
+    transition: width .2s linear;
+}
+
+.menu__list-link:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.menu__list-link:hover {
+    color: var(--header-hover-color);
+}
+
+.menu__list-svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    transition: all.2s linear;
+}
+
+.menu__list-svg:hover {
+    fill: var(--header-hover-color);
+}
+
+/* /Menu */
+
+/* Header_content */
+
+.hero-content {
+    padding: 165px 0 230px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content__text {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 72px;
+    margin-bottom: 60px;
+}
+
+.hero-content__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin-bottom: 125px;
+}
+
+.hero-content__button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    transition: all.2s linear;
+}
+
+.hero-content__button:hover {
+    border-color: var(--main-hover-color);
+    color: var(--main-hover-color);
+}
+
+/* /Header_content */
+/* /Header
+===================================================== */
+
+/* SECTION: Amazing Services
+================================== */
+
+.amazing-services  {
+    padding-top: 50px;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles__text {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.titles__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.titles__title::before {
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: var(--main-hover-color);
+    height: 3px;
+    width: 60px;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__item {
+    list-style: none;
+    display: flex;
+    flex-basis: 345px 
+}
+
+.services__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 105px;
+}
+
+.services__item-icon {
+    width: 90px;
+    display: block;
+}
+
+.services__svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--main-color);
+}
+
+.services__title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.services__text {
+    line-height: 24px;
+    color: #999;
+}
+/* /SECTION: Amazing Services
+================================== */
+
+/* SECTION: Our Team
+================================== */
+.our-team {
+    padding-top: 95px;
+    margin-bottom: 85px;
+}
+
+.our-team__description {
+    max-width: 980px;
+    margin: 0 auto 95px;
+    text-align: center;
+    line-height: 24px;
+    color: #999;
+}
+
+/* Team List */
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.team-list__item {
+    flex-basis: 380px;
+    list-style: none;
+    position: relative;
+    transition: all.2s linear;
+}
+
+.team-list__photo {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.team-list__photo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.team-list__photo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(252,227,138,1) 0%, rgba(243,129,129,0.896796218487395) 100%);
+    opacity: 0;
+    transition: all.2s linear;
+}
+
+.team-list___img {
+    transition: all.2s linear; 
+}
+
+.team-list__item:hover .team-list___img {
+    transform: translate(-10px, -10px);
+}
+
+.team-list__item:hover .team-list__photo::after {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+/* Social-list */
+.social-list {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.social-list__item {
+    list-style: none;
+}
+
+
+
+.social-list__link {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .2s linear, opacity .2s linear;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list__item:not(:last-child) .social-list__link {
+    border-right: 1px solid var(--main-hover-color);
+}
+
+.social-list__svg {
+    fill: var(--main-hover-color);
+}
+
+.social-list__link:hover {
+    background-color: var(--main-hover-color);
+}
+
+.social-list__link:hover .social-list__svg {
+    fill: #fff;
+}
+
+.team-list__item:hover .social-list__link {
+opacity: 1;
+}
+/* /Social-list */
+
+.team-content {
+    text-align: center;
+}
+
+.team-content__title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team-content__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+}
+
+/* /Team List */
+
+
+/* /SECTION: Our Team
+================================== */
+
+
+/* Footer */
+.site-footer {
+    display: flex;
+    height: 65px;
+    border-top: 1px solid #e5e5e5;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe__form {
+    font-size: 0;
+}
+
+.subscribe__input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+.subscribe__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.subscribe__submit {
+    background: var(--main-color);
+    border: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 33px;
+    cursor: pointer;
+    transition: all.2s linear;
+}
+
+.subscribe__submit:hover {
+    background: var(--main-hover-color);
+}
+
+/* /Footer */
+
+
+/* MEDIA */
+
+/* For Retina */
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .site-header {
+        background-image: url('../img/header-bg@2x.jpg');
+    }
+}
+
+/* /For Retina */
