@@ -1,0 +1,143 @@
+/* SECTION: Our Team
+================================== */
+.our-team {
+    padding-top: 95px;
+    margin-bottom: 85px;
+}
+
+.our-team__description {
+    max-width: 980px;
+    margin: 0 auto 95px;
+    text-align: center;
+    line-height: 24px;
+    color: #999;
+}
+
+/* Team List */
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+
+    &__item {
+        flex-basis: 380px;
+        list-style: none;
+        position: relative;
+        transition: all.2s linear;
+    }
+    
+    &__photo {
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+        font-size: 0;
+        margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $main-color;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(252,227,138,1) 0%, rgba(243,129,129,0.896796218487395) 100%);
+            opacity: 0;
+            transition: all.2s linear;
+        }
+    }
+    // Team-list_photo END
+    &___img {
+        transition: all.2s linear; 
+    }
+    
+    &__item:hover .team-list___img {
+        transform: translate(-10px, -10px);
+    }
+    
+    &__item:hover .team-list__photo::after {
+        opacity: 1;
+        transform: translate(-10px, -10px);
+    }
+}
+
+
+
+/* Social-list */
+.social-list {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.social-list__item {
+    list-style: none;
+}
+
+
+
+.social-list__link {
+    @include center-flex('all');
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .2s linear, opacity .2s linear;
+    opacity: 0;  
+}
+
+.social-list__item:not(:last-child) .social-list__link {
+    border-right: 1px solid $main-hover-color;
+}
+
+.social-list__svg {
+    fill: $main-hover-color;
+}
+
+.social-list__link:hover {
+    background-color: $main-hover-color;
+}
+
+.social-list__link:hover .social-list__svg {
+    fill: #fff;
+}
+
+.team-list__item:hover .social-list__link {
+opacity: 1;
+}
+/* /Social-list */
+
+.team-content {
+    text-align: center;
+}
+
+.team-content__title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team-content__text {
+    font-family: $roboto-font;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+}
+
+/* /Team List */
+
+
+/* /SECTION: Our Team
+================================== */

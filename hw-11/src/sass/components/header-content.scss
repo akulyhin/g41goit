@@ -1,0 +1,42 @@
+/* Header_content */
+
+.hero-content {
+    padding: 165px 0 230px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content__text {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 72px;
+    margin-bottom: 60px;
+}
+
+.hero-content__title {
+    font-family: $montserrat-font;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin-bottom: 125px;
+}
+
+.hero-content__button {
+    font-family: $montserrat-font;
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    transition: all.2s linear;
+
+    &:hover {
+        border-color: $main-hover-color;
+        color: $main-hover-color;
+    }
+}
+
+
+
+/* /Header_content */

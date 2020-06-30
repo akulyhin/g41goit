@@ -1,0 +1,59 @@
+/* Footer */
+.site-footer {
+    display: flex;
+    height: 65px;
+    border-top: 1px solid #e5e5e5;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-family: $montserrat-font;
+    font-size: 14px;
+    color: #333;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe__form {
+    font-size: 0;
+}
+
+.subscribe__input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    font-family: $roboto-font;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 12px;
+
+    &::placeholder {
+        font-family: $roboto-font;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 24px;
+        color: #cccccc;
+    }
+}
+
+.subscribe__submit {
+    background: $main-color;
+    border: 0;
+    color: #fff;
+    font-family: $montserrat-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 33px;
+    cursor: pointer;
+    transition: all.2s linear;
+
+    &:hover {
+        background: $main-hover-color;
+    }
+}
+
+/* /Footer */

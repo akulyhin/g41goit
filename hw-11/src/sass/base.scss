@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: $roboto-font;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+h2 {
+  font-family: $montserrat-font;
+  font-size: 30px;
+  font-weight: 700;  
+}
+
+h3 {
+  font-family: $montserrat-font;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-hover-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}

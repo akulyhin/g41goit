@@ -1,0 +1,26 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'normalize';
+@import 'base';
+
+
+// Components
+@import 'components/header-top';
+@import 'components/header-content';
+@import 'components/section_amazing-services';
+@import 'components/section_our-team';
+@import 'components/footer';
+
+@import 'media';
+
+
+
+// @import 'components/';
+
+
+
